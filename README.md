@@ -70,22 +70,22 @@ module.exports = {
         new CopyWebpackPlugin([
             // {output}/file.txt
             { from: 'from/file.txt' },
-            
+
             // equivalent
             'from/file.txt',
 
             // {output}/to/file.txt
             { from: 'from/file.txt', to: 'to/file.txt' },
-            
+
             // {output}/to/directory/file.txt
             { from: 'from/file.txt', to: 'to/directory' },
 
             // Copy directory contents to {output}/
             { from: 'from/directory' },
-            
+
             // Copy directory contents to {output}/to/directory/
             { from: 'from/directory', to: 'to/directory' },
-            
+
             // Copy glob results to /absolute/path/
             { from: 'from/directory/**/*', to: '/absolute/path' },
 
@@ -104,14 +104,14 @@ module.exports = {
                 from: '**/*',
                 to: '/absolute/path'
             },
-            
+
             // {output}/file/without/extension
             {
                 from: 'path/to/file.txt',
                 to: 'file/without/extension',
                 toType: 'file'
             },
-            
+
             // {output}/directory/with/extension.ext/file.txt
             {
                 from: 'path/to/file.txt',
@@ -122,7 +122,7 @@ module.exports = {
             ignore: [
                 // Doesn't copy any files with a txt extension    
                 '*.txt',
-                
+
                 // Doesn't copy any file, even if they start with a dot
                 '**/*',
 
@@ -213,7 +213,7 @@ If you must have webpack-dev-server write to your output directory, you can forc
 [test]: https://secure.travis-ci.org/webpack-contrib/copy-webpack-plugin.svg
 [test-url]: http://travis-ci.org/webpack-contrib/copy-webpack-plugin
 
-[cover]: https://codecov.io/gh/webpack-contrib/copy-webpack-plugin/branch/master/graph/badge.svg
+[cover]: https://img.shields.io/codecov/c/github/brutalcrozt/copy-webpack-plugin/patch-codecov.svg
 [cover-url]: https://codecov.io/gh/webpack-contrib/copy-webpack-plugin
 
 [chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
